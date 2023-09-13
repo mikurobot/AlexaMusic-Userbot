@@ -57,17 +57,17 @@ async def play(client, m: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "❤️ ᴏᴡɴᴇʀ ❤️", url=f"https://t.me/Dr_Asad_Ali"
+                        " ᴏᴡɴᴇʀ ", url=f"https://t.me/xieos"
                     ),
                     InlineKeyboardButton(
-                        "👨‍‍👧‍👦 ɢʀᴏᴜᴘ 👨‍👧‍👦", url=f"https://t.me/Shayri_Music_Lovers"
+                        " ɢʀᴏᴜᴘ ", url=f"https://t.me/info_groups"
                     ),
                 ]
             ]
         )
         if replied:
             if replied.audio or replied.voice:
-                huehue = await replied.reply("👨‍⚖️ **Aɴᴀʟʏsɪɴɢ...**")
+                huehue = await replied.reply(" **Aɴᴀʟʏsɪɴɢ...**")
                 dl = await replied.download()
                 link = replied.link
                 if replied.audio:
@@ -101,7 +101,7 @@ async def play(client, m: Message):
             else:
                 if len(m.command) < 2:
                     await m.reply(
-                        "😜 **ʀᴇᴘʟᴀʏ ᴛᴏ ᴀɴ ᴀᴜᴅɪᴏ ᴏʀ ɢɪᴠᴇ ᴍᴇ ᴀ sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ sᴇᴀʀᴄʜ**"
+                        " **ʀᴇᴘʟᴀʏ ᴛᴏ ᴀɴ ᴀᴜᴅɪᴏ ᴏʀ ɢɪᴠᴇ ᴍᴇ ᴀ sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ sᴇᴀʀᴄʜ**"
                     )
                 else:
                     huehue = await m.reply("🔎 **Sᴇᴀʀᴄʜɪɴɢ...**")
@@ -115,7 +115,7 @@ async def play(client, m: Message):
                         hm, ytlink = await ytdl(url)
                         if hm == 0:
                             await huehue.edit(
-                                f"**YTDL ERROR ⚠️** ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/Dr_Asad_Ali)",
+                                f"**YTDL ERROR ⚠️** ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/xieos)",
                                 disable_web_page_preview=True,
                             )
                         else:
@@ -147,7 +147,7 @@ async def play(client, m: Message):
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "😜 **ʀᴇᴘʟᴀʏ ᴛᴏ ᴀɴ ᴀᴜᴅɪᴏ ᴏʀ ɢɪᴠᴇ ᴍᴇ ᴀ sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ sᴇᴀʀᴄʜ**"
+                    " **ʀᴇᴘʟᴀʏ ᴛᴏ ᴀɴ ᴀᴜᴅɪᴏ ᴏʀ ɢɪᴠᴇ ᴍᴇ ᴀ sᴏᴍᴇᴛʜɪɴɢ ᴛᴏ sᴇᴀʀᴄʜ**"
                 )
             else:
                 huehue = await m.reply("🔎 **Sᴇᴀʀᴄʜɪɴɢ...**")
@@ -161,7 +161,7 @@ async def play(client, m: Message):
                     hm, ytlink = await ytdl(url)
                     if hm == 0:
                         await huehue.edit(
-                            f"**YTDL ERROR ⚠️** ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/Dr_Asad_Ali)",
+                            f"**YTDL ERROR ⚠️** ᴄᴏɴᴛᴀᴄᴛ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/xieos)",
                             disable_web_page_preview=True,
                         )
                     else:
